@@ -159,7 +159,7 @@ bool playGame()
 
 			string OpponentChoiceString = charToStringRPS(OpponentHand);
 
-			cout << "Your opponent chose " << OpponentChoiceString << ".\n";
+			cout << "Rock Paper Scissors!\nYour opponent chose " << OpponentChoiceString << ".\n";
 
 			//Does the battle. Very epic!
 			int BattleResult = battle(PlayerHand, OpponentHand);
@@ -240,10 +240,8 @@ int main()
 				system("pause");
 				system("cls");
 				Player0Ref->lose();
-
-				
 			}
-
+				
 			std::cout << "You now have " << Player0Ref->getWins() << " wins, and " << Player0Ref->getLosses() << " losses.\n";
 			if (!askToPlayAgain())
 			{
